@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './style.scss';
 
@@ -10,8 +11,12 @@ export default function Header() {
     <>
       <header id="main-header">
         <div>
-          <img src={imgLogo} class="logo" alt="InstaClone" />
-          <img src={imgCamera} class="camera" alt="Enviar Publicação" />
+          <Link to="/">
+            <img src={imgLogo} class="logo" alt="InstaClone" />
+          </Link>
+          <Link to="/new">
+            <img src={imgCamera} class="camera" alt="Enviar Publicação" />
+          </Link>
         </div>
       </header>
     </>
