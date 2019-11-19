@@ -6,4 +6,4 @@ class Feed extends Component {
   }
 }
 
-export default feed;
+export default Feed;
